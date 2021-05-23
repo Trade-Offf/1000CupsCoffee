@@ -10,7 +10,7 @@ const App: React.FC = () => {
           Hello
         </Button>
         <Button btnType={ButtonType.Link} href="http://www.baidu.com">
-          Hello
+          BaiDu.Link
         </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
