@@ -25,11 +25,14 @@ interface BaseButtonProps {
 const Button: React.FC<BaseButtonProps> = (props) => {
   const { btnType, disabled, size, children, href } = props;
 
+  // btn, btn-lg, btn-primary
+  // 插件接受无限多参数，并将所有内容拼接到一个className里；
   const classes = classNames("btn", {
     [`btn-${btnType}`]: btnType,
     [`btn-${size}`]: size,
     disabled: btnType === ButtonType.Link && disabled,
   });
+
   if (btnType === ButtonType.Link && href) {
     return (
       <a className={classes} href={href}>
