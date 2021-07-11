@@ -15,7 +15,11 @@ const App: React.FC = () => {
           SmallBtn
         </Button>
 
-        <Button btnType={ButtonType.Link} href="http://www.baidu.com">
+        <Button
+          target="_blank"
+          btnType={ButtonType.Link}
+          href="http://www.baidu.com"
+        >
           BaiDu.Link
         </Button>
         <Button disabled btnType={ButtonType.Link} href="http://www.baidu.com">
