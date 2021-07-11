@@ -33,6 +33,7 @@ const Button: React.FC<BaseButtonProps> = (props) => {
     disabled: btnType === ButtonType.Link && disabled,
   });
 
+  // 主体部分，link或button
   if (btnType === ButtonType.Link && href) {
     return (
       <a className={classes} href={href}>
