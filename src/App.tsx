@@ -15,7 +15,7 @@ const App: React.FC = () => {
           onSelect={(index) => {
             alert(index);
           }}
-          mode="vertical"
+          mode="horizontal"
         >
           <MenuItem>cool link</MenuItem>
           <MenuItem disabled>cool link 2</MenuItem>
